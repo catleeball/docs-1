@@ -110,6 +110,8 @@ ExecStart=/usr/local/bin/cloudflared proxy-dns $CLOUDFLARED_OPTS
 Restart=on-failure
 RestartSec=10
 KillMode=process
+ProtectHome=true
+ProtectKernelLogs=true
 
 [Install]
 WantedBy=multi-user.target
